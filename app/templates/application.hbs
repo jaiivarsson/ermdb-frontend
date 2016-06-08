@@ -1,3 +1,20 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="top-bar column row">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">ERmdb</li>
+      <li>{{#link-to 'albums'}}Albums{{/link-to}}</li>
+      <li>{{#link-to 'songs'}}Songs{{/link-to}}</li>
+      <li>{{#link-to 'people'}}People{{/link-to}}</li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+</div>
 
-{{outlet}}
+<div class="column row">
+  {{outlet}}
+</div>
